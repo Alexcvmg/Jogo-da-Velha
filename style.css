@@ -1,0 +1,183 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #77629d;
+}
+
+h1{
+  text-align: center;
+}
+
+.jogoDaVelha{
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0 0 5px #666;
+  padding: 10px;
+  margin: 10px;
+}
+
+main{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  
+}
+
+.borda1,.borda2,.borda4,.borda5{
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-color: #fcfcfc;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  text-align: center;
+  font-size: 100px;
+}
+
+.borda3,.borda6{
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-bottom: solid 2px black;
+  text-align: center;
+  font-size: 100px;
+}
+
+.borda7,.borda8{
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-right: solid 2px black;
+  text-align: center;  
+  font-size: 100px;
+}
+
+.borda9{
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  text-align: center;  
+  font-size: 100px;
+}
+
+.hover:hover{
+  background-color: #c5bebe;
+  cursor: pointer;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+header{
+  position: relative;
+  
+}
+.bot{
+  color: white;
+  background: purple;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  right: 0px;
+  top:0
+  
+}
+
+.bot:hover{
+  cursor: pointer;
+  background: white;
+  border: 2px solid purple;
+  color: purple;
+}
+
+p{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.placar1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 12px;
+  width: 50px;
+  font-weight: bold;
+  background: blue;
+  color: white;
+}
+
+.placar2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  font-size: 12px;
+  width: 50px;
+  font-weight: bold;
+  background: blue;
+  color: white;
+}
+
+.placar3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 140px;
+  font-size: 12px;
+  width: 50px;
+  font-weight: bold;
+  background: blue;
+  color: white;
+}
+
+.regras{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 12px;
+  border: solid 1px;
+  height: 60px;
+  background: blue;
+  padding: 5px;
+  
+  
+}
+
+div.regras p{
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

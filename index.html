@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <section class="jogoDaVelha">
+    <header>
+        <h1>Jogo da Velha</h1>
+        <h2>Jogador da vez: <span id="sJogadorDaVez"></span></h2>
+        <button class="bot" onclick="reiniciarJogo()">Reiniciar</button>
+            
+     
+    </header>
+
+    <main>
+        <div>
+            <span id="clear1" onclick="selecionarCasa(event,1)" class="borda1 hover"></span>
+            <span id="clear2" onclick="selecionarCasa(event,2)" class="borda2 hover"></span>
+            <span id="clear3" onclick="selecionarCasa(event,3)" class="borda3 hover"></span>
+        </div>
+        <div>
+            <span id="clear4" onclick="selecionarCasa(event,4)" class="borda4 hover"></span>
+            <span id="clear5" onclick="selecionarCasa(event,5)" class="borda5 hover"></span>
+            <span id="clear6" onclick="selecionarCasa(event,6)" class="borda6 hover"></span>
+        </div>
+        <div>
+            <span id="clear7" onclick="selecionarCasa(event,7)" class="borda7 hover"></span>
+            <span id="clear8" onclick="selecionarCasa(event,8)" class="borda8 hover"></span>
+            <span id="clear9" onclick="selecionarCasa(event,9)" class="borda9 hover"></span>
+        </div>
+       
+           <p>O vencedor foi: <span id="ganhador"></span></p>
+            <p class="placar1">Placar:</p>
+            <p class="placar2">X:<span id="pontoA">0</span>pts</p>
+            <p class="placar3">O:<span id="pontoB">0</span>pts</p>
+      </section>
+    
+    </main>
+    <div class="regras">
+      <p>Regrados do jogo: <br> Ganhar com 4 jogadas ou menos  = 4 pts <br> 
+      Ganhar com mais de 4 jogadas = 1 pt</p> 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
